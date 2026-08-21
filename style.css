@@ -114,6 +114,10 @@ nav a:hover {
   text-align: center;
 }
 
+.contact-hero {
+  padding: 100px 24px 60px;
+}
+
 .hero .eyebrow {
   color: var(--blue);
   font-weight: 700;
@@ -319,6 +323,35 @@ section {
   background: var(--navy);
   color: #fff;
   text-align: center;
+}
+
+.contact-cta {
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+}
+
+.contact-cta .section-title,
+.contact-cta .section-sub {
+  color: #fff;
+}
+
+.contact-cta .section-sub {
+  color: #c9d7e6;
+}
+
+.contact-cta .btn {
+  background: #fff;
+  color: var(--navy);
+}
+
+.contact-cta .btn:hover {
+  background: var(--blue-light);
+}
+
+#services,
+#about {
+  scroll-margin-top: 110px;
 }
 
 .contact .section-title,
