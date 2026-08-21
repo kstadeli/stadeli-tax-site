@@ -9,26 +9,30 @@
 </head>
 <body>
 
-<div class="topbar"></div>
-
-<header>
-  <div class="header-inner">
-    <div class="brand">Kenn Stadeli, <span class="cpa">CPA</span></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<div class="site-header">
+  <div class="topbar"></div>
+  <header>
+    <div class="header-inner">
+      <div class="brand">Kenn Stadeli, <span class="cpa">CPA</span></div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMiIHBt0yzXfHFPoLeVsLS7XbzomYjyBkOxjPlhkipYQMtJA/viewform" class="nav-cta" target="_blank" rel="noopener">New Client Intake Form</a>
+      </nav>
+    </div>
+  </header>
+</div>
 
 <section class="hero">
   <div class="eyebrow">Silverton, Oregon</div>
   <h1>Tax preparation and advisory you can trust</h1>
   <p class="tagline">For those who just don't want to deal with it.</p>
   <p>Personalized accounting and tax services for individuals, farm &amp; ranch operations, and small businesses throughout the Willamette Valley.</p>
-  <a href="tel:5038845440" class="btn">Call or Text 503-884-5440</a>
-  <a href="#contact" class="btn secondary">Get in Touch</a>
+  <div class="hero-buttons">
+    <a href="tel:5038845440" class="btn">Call or Text 503-884-5440</a>
+    <a href="#contact" class="btn secondary">Get in Touch</a>
+  </div>
 </section>
 
 <section class="philosophy">
@@ -128,6 +132,13 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  const siteHeader = document.querySelector('.site-header');
+  const updateHeaderShadow = () => {
+    siteHeader.classList.toggle('scrolled', window.scrollY > 10);
+  };
+  window.addEventListener('scroll', updateHeaderShadow);
+  updateHeaderShadow();
 </script>
 
 </body>
