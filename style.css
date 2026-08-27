@@ -395,6 +395,21 @@ section {
   font-size: 1rem;
 }
 
+.review-section {
+  background: #fff;
+  text-align: center;
+}
+
+.tally-embed-wrap {
+  background: #f7f9fb;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 620px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(20, 52, 92, 0.08);
+}
+
 #services,
 #about,
 #get-started {
